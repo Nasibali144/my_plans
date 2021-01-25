@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "33845203193",
+    "project_id": "my-plans-22270",
+    "storage_bucket": "my-plans-22270.appspot.com",
+    "firebase_url": "https://my-plans-22270-default-rtdb.firebaseio.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:33845203193:android:59d068ac63ecf78463d228",
+        "android_client_info": {
+          "package_name": "com.infinity.my_plans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "33845203193-q18dsmgq5vat66knlqu5avrj7hki1emt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMk-PmmsTnTHrzJD2AWJ8j8OCcRBTdPqM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "33845203193-q18dsmgq5vat66knlqu5avrj7hki1emt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
