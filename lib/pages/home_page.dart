@@ -21,6 +21,19 @@ class _HomePageState extends State<HomePage> {
   int currentPage = 0;
 
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    AuthService.getCurrentUser();
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:  AppBar(
@@ -52,13 +65,13 @@ class _HomePageState extends State<HomePage> {
         selectedItemColor: Colors.black,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.text_snippet_sharp, size: 30,),
-            label: 'plan'
+              icon: Icon(Icons.text_snippet_sharp, size: 30,),
+              label: 'plan'
           ),
 
           BottomNavigationBarItem(
               icon: Icon(Icons.calendar_today, size: 30,),
-            label: 'calendar'
+              label: 'calendar'
           ),
         ],
       ),

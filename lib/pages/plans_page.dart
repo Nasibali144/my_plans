@@ -26,9 +26,7 @@ class _PlansPageState extends State<PlansPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-
     _apiLoadStore();
   }
 
