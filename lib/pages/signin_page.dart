@@ -44,26 +44,27 @@ class _SignInPageState extends State<SignInPage> {
                           bottomRight: Radius.circular(15)),
                       color: Colors.white,
                       border: Border.all(color: Colors.white, width: 2),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.white.withOpacity(0.5),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(0, 3))
-                      ]),
+                      //  boxShadow: [
+                      //   BoxShadow(
+                      //       color: Colors.white.withOpacity(0.5),
+                      //       spreadRadius: 5,
+                      //       blurRadius: 7,
+                      //       offset: Offset(0, 3))
+                      // ]
+                  ),
                   child: Center(
                     child: Text(
                       "My Plans",
                       style: TextStyle(
                         fontSize: 40,
                         color: Colors.black,
-                        shadows: [
-                          BoxShadow(
-                              color: Colors.black.withOpacity(0.5),
-                              spreadRadius: 5,
-                              blurRadius: 7,
-                              offset: Offset(0, 3))
-                        ],
+                        // shadows: [
+                        //   BoxShadow(
+                        //       color: Colors.black.withOpacity(0.5),
+                        //       spreadRadius: 5,
+                        //       blurRadius: 7,
+                        //       offset: Offset(0, 3))
+                        // ],
                       ),
                     ),
                   ),
@@ -77,14 +78,15 @@ class _SignInPageState extends State<SignInPage> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(50)),
-                      color: Colors.white.withOpacity(0.9),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.white.withOpacity(0.75),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(4, 0))
-                      ]),
+                      color: Colors.white,
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //       color: Colors.white.withOpacity(0.75),
+                      //       spreadRadius: 5,
+                      //       blurRadius: 7,
+                      //       offset: Offset(4, 0))
+                      // ]
+                  ),
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
@@ -96,13 +98,7 @@ class _SignInPageState extends State<SignInPage> {
                               fontSize: 30,
                               color: Colors.black,
                               fontWeight: FontWeight.w500,
-                              shadows: [
-                                BoxShadow(
-                                    color: Colors.black.withOpacity(0.5),
-                                    spreadRadius: 5,
-                                    blurRadius: 7,
-                                    offset: Offset(3, 3))
-                              ]),
+                          ),
                         ),
                         SizedBox(
                           height: 40,
@@ -113,7 +109,7 @@ class _SignInPageState extends State<SignInPage> {
                         SizedBox(height: 40),
 
                         // #password
-                        DesignsContainer.textField(passwordController, "Password"),
+                        DesignsContainer.textFieldPassword(passwordController, "Password"),
                         SizedBox(height: 40),
 
                         // #Login

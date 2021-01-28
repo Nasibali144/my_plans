@@ -59,13 +59,14 @@ class _SignUpPageState extends State<SignUpPage> {
                       fontSize: 35,
                       color: Colors.white,
                       fontWeight: FontWeight.w500,
-                      shadows: [
-                        BoxShadow(
-                            color: Colors.white.withOpacity(0.5),
-                            spreadRadius: 10,
-                            blurRadius: 5,
-                            offset: Offset(3, 0))
-                      ]),
+                      // shadows: [
+                      //   BoxShadow(
+                      //       color: Colors.white.withOpacity(0.5),
+                      //       spreadRadius: 10,
+                      //       blurRadius: 5,
+                      //       offset: Offset(3, 0))
+                      // ]
+                  ),
                 ),
               ),
 
@@ -76,14 +77,15 @@ class _SignUpPageState extends State<SignUpPage> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(topLeft: Radius.circular(50)),
-                      color: Colors.white.withOpacity(0.9),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.white.withOpacity(0.75),
-                            spreadRadius: 5,
-                            blurRadius: 7,
-                            offset: Offset(4, 0))
-                      ]),
+                      color: Colors.white,
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //       color: Colors.white.withOpacity(0.75),
+                      //       spreadRadius: 5,
+                      //       blurRadius: 7,
+                      //       offset: Offset(4, 0))
+                      // ]
+                  ),
                   child: SingleChildScrollView(
                     child: Column(
                       children: [
@@ -101,7 +103,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         SizedBox(height: 40),
 
                         // #password
-                        DesignsContainer.textField(passwordController, 'Password'),
+                        DesignsContainer.textFieldPassword(passwordController, 'Password'),
                         SizedBox(height: 40),
 
                         // #SignUp

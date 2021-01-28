@@ -84,9 +84,7 @@ class _SplashPageState extends State<SplashPage> {
           Container(
             alignment: Alignment.bottomCenter,
             margin: EdgeInsets.all(100),
-            child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation(Colors.black),
-            ),
+            child: CircularProgressIndicator(),
           ),
         ],
       ),
